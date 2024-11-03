@@ -16,7 +16,7 @@ public class LinearSearch{
                       System.out.println("element found at index" + result);
                   }
             }
-            //prints the result we got form 2nd function
+            //prints the result we got form 2nd function 
            {
                   if(result2!=-1){
                       System.out.println(result2 + " is found");
