@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class LinearSearch{
-    public static void main(){
+    public static void main(String[] args){
         try(Scanner sc=new Scanner(System.in)){
             int[] ar={1,2,3,4,5,54354,654,32,4545,765,73,354,74,7};
             System.out.println("Enter valur too search for in array");
