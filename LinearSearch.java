@@ -6,14 +6,23 @@ public class LinearSearch{
             System.out.println("Enter valur too search for in array");
             int target=sc.nextInt();
             int result=linearSearch(ar, target);
-            if(result==-1){
-                System.out.println("Element not found");
-
+            int result2=linearSearch2(ar, target);
+            {
+                  if(result==-1||result2==-1){
+                      System.out.println("Element not found");
+      
+                  }
+                  else{
+                      System.out.println("element found at index" + result);
+                  }
             }
-            else{
-                System.out.println("element found at index" + result);
-            }
-
+            //prints the result we got form 2nd function
+           {
+                  if(result2!=-1){
+                      System.out.println(result2 + " is found");
+                  }
+           }
+           
         
         };
      
@@ -35,5 +44,17 @@ public class LinearSearch{
         }
         return -1;
         
+    }
+    //to return the elements instead of the index we can then use enhanced for loop instead of the whole loop
+    static int linearSearch2(int[] arr,int target){
+        if(arr.length==0){
+            return -1;
+        }
+        for (int element : arr) {
+            if(element==target){
+                return  element;
+            }
+        }
+        return -1;
     }
 }
