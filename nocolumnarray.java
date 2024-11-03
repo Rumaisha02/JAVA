@@ -21,7 +21,8 @@ public class nocolumnarray{
             }
     }
 }
-
+//Array list is a feature in JAVA that helps using array without defining it's size. We can store as many elemnts in ArrayList as we want. Initially arrayList have a initial capacity
+//in it which on being filled 50% it itself increases it's capacity so that we never have to face array out of index issue! 
 // public class ArraylistExample {
 //     public static void main(String[] args){
 
