@@ -24,12 +24,12 @@ public class MinMax {
         if (arr.length == 0) {
             System.out.println("Empty Array");
         }
-        int max = arr[0];
+        int maxx = arr[0];
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
+            if (arr[i] > maxx) {
+                maxx = arr[i];
             }
         }
-        return max;
+        return maxx;
     }
 }
