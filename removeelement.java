@@ -11,24 +11,20 @@ Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
 Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
 It does not matter what you leave beyond the returned k (hence they are underscores).  */
 
+
 class removeelement {
     public static void main(String[] args){
-      int[] nums={0,0,1,1,1,2,2,3,3,4};
-      removeelement obj=new removeelement();
-      int ans=obj.removeDuplicates(nums);
-      System.out.println(ans);
-    }
-
-    public int removeDuplicates(int[] nums) {
-     int count=0;
-    //  int[] temparr=new int[nums.length];
-      for (int i = 0; i < nums.length; i++) {
-          for (int j = 0; j < nums.length; i++) {
-            if(nums[i]==nums[j]){
-                count++;
-            }
-          }
+      int[] A={0,0,1,1,1,2,2,3,3,4};
+      int n=A.length;
+      int x=0;
+      for (int i = 0; i < n; i++) {
+        if(A[x]!=A[i]){
+          x++;
+          A[x]=A[i];
+        }
       }
-     return count;
+      for (int i = 0; i < x; i++) {
+        System.out.print(A[i] + "\t");
+      }
     }
 }
