@@ -1,4 +1,5 @@
-//another way to do ducth national flag algo..a direct sorting method here  we'll use insertion sort
+//another way to do ducth national flag algo..a direct sorting method here  
+//we'll use insertion sort
 
 import java.util.Arrays;
 public class dnfAlgo{
