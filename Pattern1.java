@@ -71,27 +71,69 @@ public class Pattern1 {
     //   sc.close();
     //  }
 
+    // public static void main(String[] args){
+    //     Scanner sc=new Scanner (System.in);
+    //         System.out.println("Enter n");
+    //         int n=sc.nextInt();
+    //         for (int i = 0; i <=n; i++) {
+    //              for (int j = 0; j <=n; j++) {
+    //                 if(i+j==5 || i+j>5){
+    //                     System.out.print("*" + " ");
+    //                 }else{
+    //                     System.out.print(" ");
+    //                 }
+    //              }
+    //             //  for (int k = n; k >=i; k--) {
+    //             //     System.out.print("*" + " ");
+    //             //  }
+    //              System.out.println();
+    //         }
+
+    //         sc.close();
+    //     }
+
+
+
+    // public static void main(String[] args){
+    //     Scanner sc=new Scanner (System.in);
+    //         System.out.println("Enter n");
+    //         int n=sc.nextInt();
+    //         for (int i = 0; i <=n; i++) {
+    //              for (int j = 0; j <=n; j++) {
+    //                 if(i+j==n || i+j>n){
+    //                     System.out.print(i + " ");
+    //                 }else{
+    //                     System.out.print(" ");
+    //                 }
+    //              }
+    //              System.out.println();
+    //         }
+
+    //         sc.close();
+    //     }
+
+
     public static void main(String[] args){
         Scanner sc=new Scanner (System.in);
             System.out.println("Enter n");
             int n=sc.nextInt();
-            for (int i = 0; i <=n; i++) {
-                 for (int j = 0; j <=n; j++) {
-                    if(i+j==5 || i+j>5){
-                        System.out.print("*"+ " ");
+            for (int i =1; i <=n; i++) {
+                for (int j =1; j <=n; j++) {
+                    if(i+j>n ){
+                        int p=i;
+                        System.out.print((p) + " ");
                     }else{
                         System.out.print(" ");
                     }
-                 }
-                 for (int k = n; k >=i; k--) {
-                    System.out.print("*" + " ");
-                 }
-                 System.out.println();
-            }
+                }
 
+                // for (int k = 2; k <=i; k++) {
+                //     System.out.print(k + " ");
+                // }
+                System.out.println();
+            }
             sc.close();
         }
-
 }
 
 
