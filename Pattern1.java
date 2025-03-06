@@ -30,21 +30,41 @@ public class Pattern1 {
     //     sc.close();
     // }
 
-    public static void main(String[] args){
-        Scanner sc=new Scanner (System.in);
-            System.out.println("Enter n");
-            int n=sc.nextInt(); int p=0;
-            for (int i = 1; i <=n; i++) {
-                for(int j=1;j<=i;j++){
-                    p++;
-                    System.out.print(p+" ");
+    // public static void main(String[] args){
+    //     Scanner sc=new Scanner (System.in);
+    //         System.out.println("Enter n");
+    //         int n=sc.nextInt(); int p=0;
+    //         for (int i = 1; i <=n; i++) {
+    //             for(int j=1;j<=i;j++){
+    //                 p++;
+    //                 System.out.print(p+" ");
                   
+    //             }
+    //             System.out.println();
+    //         }
+    //         sc.close();
+    // }
+
+    public static void main(String[] args){
+            Scanner sc=new Scanner (System.in);
+                System.out.println("Enter n");
+                int n=sc.nextInt();
+                for(int i=1;i<=n;i++){
+                   for(int j=1;j<=i;j++){
+                    if(i==j){
+                        System.out.print("1" + " ");
+                    }
+                    else if((i%2!=0 && j%2==0) || (i%2==0 && j%2!=0)){
+                       System.out.print("0" + " ");
+                    } 
+                    else{
+                        System.out.print("1" + " ");
+                    }
                 }
-                System.out.println();
-            }
-            sc.close();
-    }
-    
+                    System.out.println();
+                }
+      sc.close();
+     }
 }
 
 
