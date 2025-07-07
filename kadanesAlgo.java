@@ -17,30 +17,31 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23. */
 
 
 public class kadanesAlgo{
+  //TC O(n)
 public static void main(String[] args){
-  int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
-  System.out.println(maxSubArray(nums));
+  int[] nums = {-2,-1,-1};
+  System.out.println( "MAXIMUM SUB ARRAY VALUE: "+maxSubArray(nums));
 }
     public static int maxSubArray(int[] nums) {
-        int n=nums.length,CS=0,MS=nums[0];
+        int n=nums.length,CS=0,MS=Integer.MIN_VALUE;
         for (int i = 0; i < n; i++) {
             CS+=nums[i];
-            MS=max(MS,CS);
+            MS=Math.max(MS,CS);
             if(CS<0){
-                CS=0;
+              CS=0;
             }
         }
       return MS;
     }
      
-    public static int max(int MS,int CS){
-      if(CS<MS){
-        return MS;
-      }
-      else{
-        return CS;
-      }
-    }
+    // public static int max(int MS,int CS){
+    //   if(CS<MS){
+    //     return MS;
+    //   }
+    //   else{
+    //     return CS;
+    //   }
+    // }
 }
     
 
