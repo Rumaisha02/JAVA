@@ -7,6 +7,7 @@ public class BinarySearch {
     int key=sc.nextInt();
     int index=BinSearch(A,key);
     System.out.println("Index of our " + key +" is: " +index);
+    sc.close();
  }
    public static int BinSearch(int A[],int key){
 
