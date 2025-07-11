@@ -12,6 +12,8 @@ public class DiagonalMatrix {
 
         
     }
+
+    //Time complexity= O(n square)
     public static void Diagonal(int matrix[][]){
         int n=matrix.length,PD=0,SD=0;
         // System.out.println("LENGTH:"+ n);
@@ -37,5 +39,26 @@ public class DiagonalMatrix {
 
         System.out.println("Sum of Diagonals:"+DiagnoalSum);
 
+    }
+
+
+
+    //time complexity= O(n)
+    public static void DiagonalOptimized(int matrix[][]){
+          int n=matrix.length,PD=0,SD=0;
+        // System.out.println("LENGTH:"+ n);
+        for (int i = 0; i < n; i++) {
+                    PD+=matrix[i][i];
+                    SD+=matrix[i][(n-1)-i];
+        }
+         System.out.println("Primary Diagonal:"+PD+" Seconddary Diagnoal:"+SD);
+        int DiagnoalSum=PD+SD;
+         if((n%2)!=0){
+            int middle=(n-1)/2;
+            // System.out.println(matrix[middle][middle]);
+            DiagnoalSum=DiagnoalSum-matrix[middle][middle];
+         }
+
+        System.out.println("Sum of Diagonals:"+DiagnoalSum);
     }
 }
