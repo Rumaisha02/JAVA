@@ -1,3 +1,4 @@
+package Sortings;
 public class InsertionSort {
     public static void main(String[] args){
         int[] A={40,20,30,50,10,60};
