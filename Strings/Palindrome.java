@@ -11,5 +11,12 @@ public class Palindrome {
 
          if(rev.equalsIgnoreCase(s))
          {System.out.println("Palindrome");}else{System.out.println("NOT PALINDROME");}
+
+         //another way
+         for (int index = 0; index < len/2; index++) {
+            if (s.charAt(index)!=s.charAt(len-1-index)) {
+                System.out.println(" String not palindrome ");break;
+            }
+         }
     }
 }
