@@ -1,0 +1,7 @@
+"=="   for checking strings checks on object level..this means that it not only checks the value stores but also that the variable 
+points to the same address in memory 
+
+".equals()"    checks only if the value of stores is equal or not
+
+".substring(startIndex,endingIndex)"  ending index excluded..this fucntion returns that specific part of string between these indexes 
+".compareTo()" function compares two strings lexicographicaly 
