@@ -13,19 +13,12 @@ public class MergeSortedArray88 {
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 
-        for (int i = 0; i < m + n; i++) {
-            if (i >= m) {
-
-                if (n == 1) {
-                    nums1[i] = nums2[i];
-                } else {
-                    nums1[i] = nums2[(i - n)];
-                }
-
-            }
-            nums1[i] = nums1[i];
+        for (int j = 0, i = m; j < n; j++) {
+            nums1[i] = nums2[j];
+            i++;
         }
         Arrays.sort(nums1);
         System.out.println(Arrays.toString(nums1));
     }
+
 }
