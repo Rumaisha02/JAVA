@@ -5,3 +5,12 @@ points to the same address in memory
 
 ".substring(startIndex,endingIndex)"  ending index excluded..this fucntion returns that specific part of string between these indexes 
 ".compareTo()" function compares two strings lexicographicaly 
+
+
+STRING BUILDER
+used as strings are immutable and have alot time complexity so to handle that, we've got String BUILDER
+syntax: StingBuilder sb= new StingBuilder("String"); now we can do as many changes as we want in this sb 
+*Sting builder is not a String type.. and it can be changed to String using .toString() function
+we can change almost any type to string but it should be Object ..for example- 
+int a=45; a.toString() ❌ will not work as int is not an object,whereas
+Integer a=45; a.toString()✅ will change to string type ...same for every other object 
