@@ -1,0 +1,2 @@
+sum in range => sum=b*(b+1)/2-a*(a+1)/2+a
+prime optimized => loop till sqrt(n)
