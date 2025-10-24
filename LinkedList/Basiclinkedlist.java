@@ -67,9 +67,10 @@ public class Basiclinkedlist{
       public void printLL( Node Head){
         Node temp=Head;
         while(temp!=null){
-            System.out.println(temp.data);
+            System.out.print(temp.data+ " -> " );
             temp=temp.next;
         }
+        System.out.print("null");
       }
       public int search(int key){
         Node temp=Head; int i=0;
@@ -102,6 +103,19 @@ public class Basiclinkedlist{
       }
 
 
+      public void Reverse(){
+        Node prev=null;
+        Node curr=Tail=Head;
+        Node next;
+        while(curr!=null){
+            next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        Head=prev;
+      }
+
 
     public static void main(String[] args){
      Scanner sc=new Scanner(System.in);
@@ -111,13 +125,15 @@ public class Basiclinkedlist{
      ll.addLast(5);
      ll.addLast(3);
      ll.printLL(Head);
-     System.out.println(size);
+     System.out.println("\n"+"Size of Linked List: "+ size);
      System.out.println("Enter value to search: ");
      int key=sc.nextInt();
      int index=ll.recSearch(key);
      System.out.println("Key found at index node: "+ index);
-     int deleted=ll.RemoveLast();
-     System.out.println("node deleted="+deleted);
-      ll.printLL(Head);
+     ll.Reverse();
+     ll.printLL(Head);
+    //  int deleted=ll.RemoveLast();
+    //  System.out.println("node deleted="+deleted);
+    //   ll.printLL(Head);
     }
 }
