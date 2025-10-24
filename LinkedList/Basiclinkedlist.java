@@ -115,6 +115,11 @@ public class Basiclinkedlist{
         }
         Head=prev;
       }
+ //important functio asked in many companies
+    public void deleteNth(int n){
+
+     }
+
 
 
     public static void main(String[] args){
