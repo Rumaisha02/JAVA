@@ -85,6 +85,23 @@ public class Basiclinkedlist{
       } 
 
 
+      public int helper(Node Head,int key){
+        if(Head==null){
+            return -1;
+        }
+        if(Head.data==key){
+            return 0;
+        }     
+        int idx=helper(Head.next, key);
+        if(idx==-1){return -1;}
+        return idx+1;
+    }
+
+      public int recSearch(int key){
+        return helper(Head,key);
+      }
+
+
 
     public static void main(String[] args){
      Scanner sc=new Scanner(System.in);
@@ -97,7 +114,7 @@ public class Basiclinkedlist{
      System.out.println(size);
      System.out.println("Enter value to search: ");
      int key=sc.nextInt();
-     int index=ll.search(key);
+     int index=ll.recSearch(key);
      System.out.println("Key found at index node: "+ index);
      int deleted=ll.RemoveLast();
      System.out.println("node deleted="+deleted);
